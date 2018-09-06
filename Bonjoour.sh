@@ -1,8 +1,8 @@
-#! / bin / bash
+#!/bin/sh
 
-si [ 1 $ ]
-puis
-	echo  " Bonjour " $ 1
-autre
-	echo  " Bonjour " $ USER
-Fi
+if [ $# -eq 0 ]
+then
+  echo "Bonjour $USER"
+else
+  echo "Bonjour $1"
+fi
